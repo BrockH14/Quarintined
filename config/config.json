@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Kaydoe1414",
+    "database": "ingredientsDb",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Bmxrider1",
+    "database": "ingredientsDb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,381 @@
+{{!-- {{>title}}
+{{#if isAuthenticated}}
+{{>navbarAuth}}
+{{else}} --}}
+{{>navbar}}
+{{!-- {{/if}} --}}
+
+<div class="home-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text">
+                <h1 class="wow fadeInLeftBig" data-wow-duration="2s">
+                    Quarantined
+                </h1>
+                <div class="description wow fadeInLeftBig">
+                    <p class="sub">
+                        Food based forum
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="about-container section-container">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col about section-description wow fadeIn">
+                <h2>How it works</h2>
+                <div class="divider-1 wow fadeInUp"><span></span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 about-box wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about-box-icon">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Create an account</h3>
+                        <p>
+                            Create an account to save your options
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 about-box wow fadeInDown">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about-box-icon">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Find Recipes</h3>
+                        <p>
+                            Find your favorite food and drink and post to the frontpage!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 about-box wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about-box-icon">
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Debate with others</h3>
+                        <p>
+                            The top voted meals will be posted on the front-page for all to see!
+                            Comment and like other users preferences
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form class="form-inline my-2 my-lg-0">
+            <p>
+            <h3><strong>Choose which recipe you want?</strong></h3>
+            <select class="chosen-select" id="MDSelect">
+            <option value=""></option>
+            <option value="food">food</option>
+            <option value="drink">drink</option>
+            </select>
+            </p>
+            <input class="input is-rounded" type="search" placeholder="Search" aria-label="Search" id="searchTerm">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search">Search</button>
+        </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h1 id="top-food-header">Food Search <i id="food-Search" class="fas fa-pizza-slice"></i></h1>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h1 id="top-streams-header">Drink Search <i id="drink-Search" class="fas fa-glass-martini"></i></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container-sub">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="animated zoomIn delay-2s text-center" id="heading">Discussion Board</h1>
+            <h2 class="animated zoomInUp delay-20s text-center" id="subHeading">Compare your favorite meals!
+            </h2>
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                
+                                <h1 id="top-food-header">Top food options <i id="food-list" class="fas fa-pizza-slice"></i>
+                                </h1><button><a href="/submissions">Add a new Meal.</a></button>
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <a id="image-link1" target="_blank" href="">
+                                    <img class="food-thumbnail" id="food-thumbnail1">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a id="food-name-link1" target="_blank" href="">
+                                    <h1>
+                                        <span class="food-name" id="food-name1"></span>
+                                    </h1>
+                                </a>
+                                <hr>
+                                <p>
+                                    Description: <span class="food-title" id="food-title1"></span>
+                                    <br>
+                                    <span class="food-desc" id="food-desc1"></span>
+                                </p>
+                                <form id="cms">
+                                    <div class="form-group">
+                                        <label for="title">Title:</label>
+                                        <input placeholder="Post Title" type="text" class="input is-rounded" id="title">
+                                        <br />
+                                        <label for="body">Body:</label>
+                                        <textarea placeholder="Post Body" class="textarea is-primary" rows="5"
+                                            id="body">
+                                        </textarea>
+                                        <br/>
+                                        <button type="submit" id="submit" class="btn btn-success submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <a id="image-link2" target="_blank" href="">
+                                    <img class="food-thumbnail" id="food-thumbnail2">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a id="food-name-link2" target="_blank" href="">
+                                    <h1>
+                                        <span class="food-name" id="food-name2"></span>
+                                    </h1>
+                                </a>
+                                <hr>
+                                <p>
+                                    Description: <span class="food-title" id="food-title2"></span>
+                                    <br>
+                                    <span class="food-desc" id="food-desc2"></span>
+                                </p>
+                                <form id="cms">
+                                    <div class="form-group">
+                                        <label for="title">Title:</label>
+                                        <input placeholder="Post Title" type="text" class="input is-rounded" id="title">
+                                        <br />
+                                        <label for="body">Body:</label>
+                                        <textarea placeholder="Post Body" class="textarea is-primary" rows="5"
+                                            id="body">
+                                        </textarea>
+                                        <br/>
+                                        <button type="submit" class="btn btn-success submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <a id="image-link3" target="_blank" href="">
+                                    <img class="food-thumbnail" id="food-thumbnail3">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a id="food-name-link3" target="_blank" href="">
+                                    <h1>
+                                        <span class="food-name" id="food-name3"></span>
+                                    </h1>
+                                </a>
+                                <hr>
+                                <p>
+                                    Description: <span class="food-title" id="food-title3"></span>
+                                    <br>
+                                    <span class="food-desc" id="food-desc3"></span>
+                                </p>
+                               <form id="cms">
+                                    <div class="form-group">
+                                        <label for="title">Title:</label>
+                                        <input placeholder="Post Title" type="text" class="input is-rounded" id="title">
+                                        <br />
+                                        <label for="body">Body:</label>
+                                        <textarea placeholder="Post Body" class="textarea is-primary" rows="5"
+                                            id="body">
+                                        </textarea>
+                                        <br/>
+                                        <button type="submit" class="btn btn-success submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                                                    </div>
+                        </div>
+                    </div>
+
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                
+                                <h1 id="top-streams-header">Top drink options <i id="drink-list"
+                                        class="fas fa-glass-martini"></i></h1><button><a href="/submissions">Add a new drink.</a></button>
+          
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <a id="image-link1" target="_blank" href="">
+                                    <img class="drink-thumbnail" id="drink-thumbnail1">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a id="drink-name-link1" target="_blank" href="">
+                                    <h1>
+                                        <span class="drink-name" id="drink-name1"></span>
+                                    </h1>
+                                </a>
+                                <hr>
+                                <p>
+                                    Description: <span class="drink-title" id="drink-title1"></span>
+                                    <br>
+                                    <span class="drink-desc" id="drink-desc1"></span>
+                                </p>
+                               <form id="cms">
+                                    <div class="form-group">
+                                        <label for="title">Title:</label>
+                                        <input placeholder="Post Title" type="text" class="input is-rounded" id="title">
+                                        <br />
+                                        <label for="body">Body:</label>
+                                        <textarea placeholder="Post Body" class="textarea is-primary" rows="5"
+                                            id="body">
+                                        </textarea>
+                                        <br/>
+                                        <button type="submit" class="btn btn-success submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <a id="image-link2" target="_blank" href="">
+                                    <img class="drink-thumbnail" id="drink-thumbnail2">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a id="drink-name-link2" target="_blank" href="">
+                                    <h1>
+                                        <span class="drink-name" id="drink-name2"></span>
+                                    </h1>
+                                </a>
+                                <hr>
+                                <p>
+                                    Description: <span class="drink-title" id="drink-title2"></span>
+                                    <br>
+                                    <span class="drink-desc" id="drink-desc2"></span>
+                                </p>
+                                <form id="cms">
+                                    <div class="form-group">
+                                        <label for="title">Title:</label>
+                                        <input placeholder="Post Title" type="text" class="input is-rounded" id="title">
+                                        <br />
+                                        <label for="body">Body:</label>
+                                        <textarea placeholder="Post Body" class="textarea is-primary" rows="5"
+                                            id="body">
+                                        </textarea>
+                                        <br/>
+                                        <button type="submit" class="btn btn-success submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <a id="image-link3" target="_blank" href="">
+                                    <img class="drink-thumbnail" id="drink-thumbnail3">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a id="drink-name-link3" target="_blank" href="">
+                                    <h1>
+                                        <span class="drink-name" id="drink-name3"></span>
+                                    </h1>
+                                </a>
+                                <hr>
+                                <p>
+                                    Description: <span class="drink-title" id="drink-title3"></span>
+                                    <br>
+                                    <span class="drink-desc" id="drink-desc3"></span>
+                                </p>
+                               <form id="cms">
+                                    <div class="form-group">
+                                        <label for="title">Title:</label>
+                                        <input placeholder="Post Title" type="text" class="input is-rounded" id="title">
+                                        <br />
+                                        <label for="body">Body:</label>
+                                        <textarea placeholder="Post Body" class="textarea is-primary" rows="5"
+                                            id="body">
+                                        </textarea>
+                                        <br/>
+                                        <button type="submit" class="btn btn-success submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                                          </div>
+                        </div>
+                    </div>
+<br>
+<br>
+
+         </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+<script src="/js/index.js"></script>
+
+            </div>
+        </div>
+    </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{>footer}}
