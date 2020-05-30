@@ -1,21 +1,25 @@
 {
   "development": {
-    "username": "root",
-    "password": "Kaydoe1414",
-    "database": "ingredientsDb",
-    "host": "localhost",
+    "username": "d06ovyhzroin38fk",
+    "password": "rpicycssah7q1gcu",
+    "database": "jfqxle91mukmnbp8",
+    "host": "o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "Bmxrider1",
-    "database": "ingredientsDb",
-    "host": "localhost",
+    "username": "d06ovyhzroin38fk",
+    "password": "rpicycssah7q1gcu",
+    "database": "jfqxle91mukmnbp8",
+    "host": "o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "logging": false
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",
+    "username": "d06ovyhzroin38fk",
+    "password": "rpicycssah7q1gcu",
+    "database": "jfqxle91mukmnbp8",
+    "host": "o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
